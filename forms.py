@@ -15,7 +15,7 @@ class AddPetForm(FlaskForm):
 
     species = SelectField(
         "Species",
-        choices=[("cat", "Cat"), ("dog", "Dog"), ("porcupine", "Porcupine")],
+        choices=[("cat", "Cat"), ("dog", "Dog"), ("bird", "Bird"), ("snake", "Snake"), ("chinchilla", "Chinchilla") ("porcupine", "Porcupine")],
     )
 
     photo_url = StringField(
@@ -25,12 +25,12 @@ class AddPetForm(FlaskForm):
 
     age = IntegerField(
         "Age",
-        validators=[Optional(), NumberRange(min=0, max=30)],
+        validators=[Optional(), NumberRange(min=0, max=99)],
     )
 
     notes = TextAreaField(
         "Comments",
-        validators=[Optional(), Length(min=10)],
+        validators=[Optional(), Length(min=15)],
     )
 
 
