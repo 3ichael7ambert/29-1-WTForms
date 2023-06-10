@@ -15,7 +15,7 @@ class AddPetForm(FlaskForm):
 
     species = SelectField(
         "Species",
-        choices=[("cat", "Cat"), ("dog", "Dog"), ("bird", "Bird"), ("snake", "Snake"), ("chinchilla", "Chinchilla") ("porcupine", "Porcupine")],
+        choices=[("cat", "Cat"), ("dog", "Dog"), ("bird", "Bird"), ("snake", "Snake"), ("chinchilla", "Chinchilla"), ("porcupine", "Porcupine")],
     )
 
     photo_url = StringField(
