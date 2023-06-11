@@ -2,7 +2,7 @@
 ----------------------------------------------------------------
 Be sure to seed the Database first
 ```bash
-psql > seed_adopt.sql
+psql < seed_adopt.sql
 ```
 
 ```bash
